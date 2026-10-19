@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Triptolemus · Catálogo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--verde:#23382D;--marfil:#EDE6D8;--terra:#A65F46;--carbon:#292A27;--marfil2:#E2D9C7;--linea:rgba(41,42,39,.22);
+--serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;--sans:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--marfil);color:var(--carbon);font:400 1rem/1.6 var(--sans)}
+a{color:inherit}button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--terra);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(1rem,4vw,2.5rem)}
+.aviso{background:var(--terra);color:var(--marfil);font:400 .78rem/1.4 var(--mono);text-align:center;padding:.45rem 1rem}
+header.top{background:var(--verde);color:var(--marfil);position:sticky;top:0;z-index:20}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:64px;flex-wrap:wrap}
+.marca{font:500 1.05rem var(--sans);letter-spacing:.42em;text-decoration:none}
+nav a{margin-left:1.4rem;text-decoration:none;font-size:.92rem;opacity:.85}nav a:hover{opacity:1;text-decoration:underline;text-underline-offset:5px}
+.hero{background:var(--verde);color:var(--marfil);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center;padding-top:clamp(2.5rem,7vw,5.5rem);padding-bottom:clamp(2.5rem,7vw,5.5rem)}
+.hero h1{font:500 clamp(2.6rem,6.2vw,5rem)/1.02 var(--serif);margin:0 0 1.2rem;letter-spacing:-.01em}
+.hero p{max-width:34rem;margin:0 0 2rem;opacity:.85}
+.btn{display:inline-block;background:var(--marfil);color:var(--verde);border:0;padding:.85rem 1.5rem;text-decoration:none;font-weight:600}
+.btn:hover{background:#fff}
+.lamina{position:relative;aspect-ratio:1;max-width:460px;width:100%;justify-self:center}
+.lamina svg{width:100%;height:100%;display:block}
+.lamina figcaption{position:absolute;left:0;bottom:-.2rem;font:400 .72rem/1.5 var(--mono);opacity:.7}
+section{padding:clamp(2.5rem,6vw,4.5rem) 0}
+h2{font:500 clamp(2rem,4vw,2.9rem)/1.1 var(--serif);margin:0 0 .4rem}
+.sub{margin:0 0 1.8rem;opacity:.75}
+.filtros{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:.9rem;align-items:center}
+.filtros .et{font:400 .78rem var(--mono);opacity:.65;margin-right:.3rem;min-width:7.5rem}
+.chip{background:transparent;border:1px solid var(--carbon);padding:.38rem .95rem;border-radius:99px;font-size:.88rem}
+.chip[aria-pressed=true]{background:var(--verde);border-color:var(--verde);color:var(--marfil)}
+.chip:hover{background:var(--marfil2)}.chip[aria-pressed=true]:hover{background:var(--verde)}
+.mapa{display:grid;grid-template-columns:auto repeat(3,1fr);border:1px solid var(--linea);margin:1.4rem 0 .5rem;font-size:.88rem}
+.mapa>div{padding:.7rem .9rem;border-bottom:1px solid var(--linea);border-right:1px solid var(--linea)}
+.mapa .h{font:500 .75rem var(--mono);background:var(--marfil2)}
+.mapa button{display:block;background:none;border:0;padding:.1rem 0;text-align:left;text-decoration:underline;text-decoration-color:var(--linea);text-underline-offset:3px}
+.mapa button:hover{color:var(--terra)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1.5rem;margin-top:1.6rem}
+.card{background:none;border:0;padding:0;text-align:left;display:flex;flex-direction:column}
+.card .img{aspect-ratio:4/5;background:var(--verde);overflow:hidden;position:relative}
+.card .img svg,.card .img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.card:hover .img svg,.card:hover .img img{transform:scale(1.04)}
+.card .cod{position:absolute;left:.6rem;top:.6rem;background:var(--marfil);font:400 .7rem var(--mono);padding:.15rem .45rem}
+.card .meta{font:400 .74rem var(--mono);color:var(--terra);margin:.8rem 0 .15rem}
+.card h3{font:600 1.4rem/1.15 var(--serif);margin:0 0 .35rem}
+.card p{margin:0 0 .6rem;font-size:.92rem;opacity:.8;flex:1}
+.card .precio{font:500 1.05rem var(--mono);border-top:1px solid var(--linea);padding-top:.5rem}
+.vacio{padding:2rem 0;opacity:.7}
+.faq{background:var(--marfil2)}
+details{border-top:1px solid var(--linea);padding:1rem 0}details:last-child{border-bottom:1px solid var(--linea)}
+summary{font:600 1.35rem/1.25 var(--serif);cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:1rem}
+summary::-webkit-details-marker{display:none}summary::after{content:"+";font:400 1.3rem var(--mono);color:var(--terra)}
+details[open] summary::after{content:"–"}details p{margin:.7rem 0 0;max-width:46rem}
+footer{background:var(--verde);color:var(--marfil);padding:2.5rem 0;font-size:.85rem}
+footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;align-items:baseline}
+footer .marca{font-size:.9rem}footer small{font-family:var(--mono);opacity:.65}
+dialog{border:0;padding:0;background:var(--marfil);color:var(--carbon);width:min(920px,94vw);max-height:92vh;overflow:auto}
+dialog::backdrop{background:rgba(35,56,45,.82)}
+.ficha{display:grid;grid-template-columns:1fr 1fr}
+.ficha .img{background:var(--verde);min-height:300px}.ficha .img svg,.ficha .img img{width:100%;height:100%;object-fit:cover;display:block}
+.ficha .txt{padding:clamp(1.2rem,3vw,2.2rem);position:relative}
+.ficha h3{font:500 2.2rem/1.1 var(--serif);margin:.3rem 2rem .6rem 0}
+.ficha .meta{font:400 .78rem var(--mono);color:var(--terra)}
+.ficha .precio{font:500 1.7rem var(--mono);margin:1rem 0}
+.ficha dl{display:grid;grid-template-columns:auto 1fr;gap:.35rem 1rem;margin:1rem 0 0;font-size:.9rem;border-top:1px solid var(--linea);padding-top:.9rem}
+.ficha dt{font:400 .76rem var(--mono);opacity:.65;padding-top:.15rem}.ficha dd{margin:0}
+.cerrar{position:absolute;right:.8rem;top:.8rem;background:var(--verde);color:var(--marfil);border:0;width:2.2rem;height:2.2rem;font-size:1.2rem;line-height:1}
+.ficticio{font:400 .74rem var(--mono);background:var(--marfil2);padding:.5rem .7rem;margin-top:1.2rem}
+@media(max-width:760px){.hero .wrap{grid-template-columns:1fr}.lamina{max-width:280px;order:-1;justify-self:start}.ficha{grid-template-columns:1fr}.ficha .img{min-height:220px;aspect-ratio:4/3}
+.mapa{grid-template-columns:1fr}.mapa .h.vacia{display:none}nav a:first-child{margin-left:0}.filtros .et{width:100%}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="aviso" id="aviso"></div>
+<header class="top"><div class="wrap">
+  <a class="marca" href="#inicio">TRIPTOLEMUS</a>
+  <nav aria-label="Principal"><a href="#catalogo">Catálogo</a><a href="#faq">Preguntas frecuentes</a></nav>
+</div></header>
+
+<main id="inicio">
+<div class="hero"><div class="wrap">
+  <div>
+    <h1>Archivo de hongos funcionales</h1>
+    <p>Hongos deshidratados, microdosis y chocolates, catalogados como especímenes: cada ficha reúne su origen, presentación y precio.</p>
+    <a class="btn" href="#catalogo">Explorar el catálogo</a>
+  </div>
+  <figure class="lamina" style="margin:0" aria-label="Lámina decorativa: huella de esporas">
+    <svg id="heroSvg" viewBox="0 0 400 400" role="img" aria-hidden="true"></svg>
+    <figcaption>Lám. I · huella de esporas, ejemplo</figcaption>
+  </figure>
+</div></div>
+
+<section id="catalogo"><div class="wrap">
+  <h2>Catálogo</h2>
+  <p class="sub">Filtra por categoría. Selecciona una tarjeta para abrir su ficha.</p>
+  <div class="filtros" role="group" aria-label="Categoría"><span class="et">Categoría</span><span id="fCat"></span></div>
+  <div id="mapa" hidden></div>
+  <div class="grid" id="grid" aria-live="polite"></div>
+</div></section>
+
+<section class="faq" id="faq"><div class="wrap">
+  <h2>Preguntas frecuentes</h2>
+  <p class="sub">Respuestas provisionales: se sustituirán por información verificada.</p>
+  <div id="faqList"></div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span class="marca">TRIPTOLEMUS</span><small id="pie">Catálogo experimental</small></div></footer>
+
+<dialog id="dlg" aria-labelledby="fTitulo"><div class="ficha" id="ficha"></div></dialog>
+
+<script src="datos.js"></script>
+<script>
+const D = window.CATALOGO || {productos:[],faq:[],moneda:"S/"};
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const precio = n => D.moneda + " " + Number(n).toFixed(2);
+const HONGOS = "Hongos deshidratados", NIVELES = ["Suaves","Fuertes","Muy fuertes"], SUBS = ["Clásicos","Exóticos"];
+const st = {cat:"Todos"};
+
+// Lámina generada: huella de esporas con semilla por código (se usa si no hay foto)
+function lamina(seed, fondo="#23382D"){
+  let h = 0; for (const c of String(seed)) h = (h*31 + c.charCodeAt(0)) >>> 0;
+  const r = () => (h = (h*1664525 + 1013904223) >>> 0) / 4294967296;
+  const n = 36 + Math.floor(r()*30), cx = 200, cy = 200, tono = ["#EDE6D8","#A65F46","#C9B99A"];
+  let s = `<rect width="400" height="400" fill="${fondo}"/>`;
+  for (let i=0;i<n;i++){ const a = i/n*Math.PI*2 + r()*.05, r0 = 20+r()*30, r1 = 110+r()*80;
+    s += `<line x1="${cx+Math.cos(a)*r0}" y1="${cy+Math.sin(a)*r0}" x2="${cx+Math.cos(a)*r1}" y2="${cy+Math.sin(a)*r1}" stroke="${tono[i%7===0?1:0]}" stroke-width="${(.6+r()*1.2).toFixed(2)}" opacity="${(.35+r()*.5).toFixed(2)}"/>`; }
+  for (let i=0;i<4;i++) s += `<circle cx="${cx}" cy="${cy}" r="${40+i*38+r()*10}" fill="none" stroke="#EDE6D8" stroke-width=".7" opacity=".4"/>`;
+  s += `<circle cx="${cx}" cy="${cy}" r="14" fill="#A65F46"/>`;
+  return s;
+}
+$("heroSvg").innerHTML = lamina("TRIPTOLEMUS-I");
+$("aviso").textContent = D.aviso || "";
+if (D.aviso) $("pie").textContent = "Catálogo experimental · versión de prueba";
+if (!D.aviso) $("aviso").hidden = true;
+
+const imgHTML = p => p.imagen
+  ? `<img src="${esc(p.imagen)}" alt="${esc(p.nombre)}" loading="lazy">`
+  : `<svg viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Lámina de muestra para ${esc(p.nombre)}">${lamina(p.id)}</svg>`;
+const etiqueta = p => [p.categoria, p.subcategoria, p.nivel].filter(Boolean).join(" / ");
+
+function chips(cont, lista, key){
+  $(cont).innerHTML = ["Todos", ...lista].map(v => `<button class="chip" data-k="${key}" data-v="${esc(v)}" aria-pressed="${st[key]===v}">${esc(v)}</button>`).join(" ");
+}
+function render(){
+  const cats = [...new Set(D.productos.map(p => p.categoria))];
+  chips("fCat", cats, "cat");
+  const esH = st.cat === HONGOS;
+  const lista = D.productos.filter(p => st.cat==="Todos"||p.categoria===st.cat);
+  $("grid").innerHTML = lista.length ? lista.map(p => `
+    <button class="card" data-id="${esc(p.id)}" aria-label="Abrir ficha de ${esc(p.nombre)}">
+      <span class="img">${imgHTML(p)}<span class="cod">${esc(p.id)}</span></span>
+      <span class="meta">${esc(etiqueta(p))}</span>
+      <h3>${esc(p.nombre)}</h3>
+      <p>${esc(p.descripcion)}</p>
+      <span class="precio">${precio(p.precio)}</span>
+    </button>`).join("") : `<p class="vacio">No hay productos con estos filtros. Prueba con otra combinación.</p>`;
+  // Mapa de niveles: qué productos pertenecen a cada nivel
+  const m = $("mapa"); m.hidden = !esH;
+  if (esH){
+    const celda = (sub, niv) => D.productos.filter(p => p.categoria===HONGOS && p.subcategoria===sub && p.nivel===niv)
+      .map(p => `<button data-id="${esc(p.id)}">${esc(p.nombre)}</button>`).join("") || "–";
+    m.innerHTML = `<div class="mapa"><div class="h vacia"></div>${NIVELES.map(n=>`<div class="h">${n}</div>`).join("")}` +
+      SUBS.map(s => `<div class="h">${s}</div>` + NIVELES.map(n => `<div>${celda(s,n)}</div>`).join("")).join("") + `</div>`;
+  }
+}
+function abrir(id){
+  const p = D.productos.find(x => x.id === id); if (!p) return;
+  const fila = (k,v) => v ? `<dt>${k}</dt><dd>${esc(v)}</dd>` : "";
+  $("ficha").innerHTML = `<div class="img">${imgHTML(p)}</div><div class="txt">
+    <button class="cerrar" aria-label="Cerrar ficha" id="x">×</button>
+    <div class="meta">${esc(p.id)} · ${esc(etiqueta(p))}</div>
+    <h3 id="fTitulo">${esc(p.nombre)}</h3><p>${esc(p.descripcion)}</p>
+    <div class="precio">${precio(p.precio)}</div>
+    <dl>${fila("Presentación",p.presentacion)}${fila("Peso",p.peso)}${fila("Ingredientes",p.ingredientes)}${fila("Alérgenos",p.alergenos)}</dl>
+    ${D.aviso ? `<div class="ficticio">Datos ficticios de prototipo.</div>` : ""}</div>`;
+  $("dlg").showModal(); $("x").onclick = () => $("dlg").close();
+}
+document.addEventListener("click", e => {
+  const chip = e.target.closest(".chip"), card = e.target.closest("[data-id]");
+  if (chip){ const {k,v} = chip.dataset; st[k] = v;
+    render(); }
+  else if (card) abrir(card.dataset.id);
+  else if (e.target === $("dlg")) $("dlg").close();
+});
+$("faqList").innerHTML = D.faq.map(f => `<details><summary>${esc(f.p)}</summary><p>${esc(f.r)}</p></details>`).join("");
+render();
+</script>
+</body>
+</html>
