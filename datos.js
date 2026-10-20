@@ -63,7 +63,7 @@ window.CATALOGO = {
    "nombre": "Panaeolus Cyancescens TTBVI",
    "categoria": "Hongos deshidratados",
    "subcategoria": "Exótico",
-   "nivel": "Muy Fuertes",
+   "nivel": "Muy fuertes",
    "descripcion": "Variedad de Panaeolus Cyanescens hallada en bajo un árbol de tamarindo en las British Virgin Islands. Conocida por ser el hongo más potente del mundo en contenido de psilocibina a la fecha.",
    "precio": 45.0,
    "presentacion": "Frasco de vidrio",
