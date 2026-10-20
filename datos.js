@@ -61,20 +61,24 @@ window.CATALOGO = {
  ],
  "faq": [
   {
-   "p": "¿Qué es Triptolemus?",
-   "r": "PENDIENTE"
+   "p": "¿Quiénes no deberían consumir hongos con psilocibina?",
+   "r": "Se recomienda evitar la psilocibina, o no consumirla sin una evaluación médica especializada, en los siguientes casos:\nPersonas con antecedentes personales de psicosis, esquizofrenia o trastorno bipolar, especialmente si han presentado manía.\nPersonas con enfermedades cardiovasculares graves o hipertensión no controlada.\nPersonas que toman litio, debido al posible aumento del riesgo de convulsiones.\nPersonas embarazadas o en periodo de lactancia, por la falta de evidencia suficiente sobre su seguridad.\nPersonas que toman antidepresivos u otros psicofármacos: las interacciones varían según el medicamento. Es importante consultar con un profesional y no suspender ni modificar la medicación por cuenta propia.\nEsta lista no es exhaustiva. Si tienes alguna enfermedad o tomas medicamentos, consulta antes con un profesional sanitario.\n"
   },
   {
-   "p": "¿Cómo se conservan los productos?",
-   "r": "PENDIENTE"
+   "p": "¿Cuánto duran los efectos?",
+   "r": "Los efectos principales suelen durar entre 4 y 6 horas, aunque pueden variar según la persona, el hongo y la cantidad de psilocibina ingerida. Los efectos suelen comenzar entre 20 y 40 minutos después de consumirlos y alcanzar su mayor intensidad aproximadamente entre los 60 y 90 minutos.  Algunas personas pueden experimentar cansancio, alteraciones del sueño o una sensación de estar diferentes durante más tiempo. Por eso, no conviene planificar actividades importantes para el resto del día ni conducir mientras persistan los efectos."
   },
   {
-   "p": "¿Cómo se realiza un pedido?",
-   "r": "PENDIENTE"
+   "p": "¿Puedo consumirlos estando solo?",
+   "r": "Lo más prudente es no consumirlos a solas, especialmente si es tu primera experiencia. Se recomienda contar con una persona de confianza, sobria y capaz de acompañarte durante toda la experiencia, sin juzgarte y preparada para pedir ayuda si es necesario.  Si decides hacerlo estando solo, avisa previamente a alguien de confianza, acuerda que se comunique contigo y asegúrate de poder pedir ayuda. Ten presente que estas medidas no eliminan los riesgos de estar sin compañía.  Evita conducir, salir a lugares peligrosos, acercarte a balcones o cuerpos de agua, y mezclar los hongos con alcohol u otras drogas.  No tomes decisiones importantes ni realices cambios importantes en tu vida mientras estés bajo sus efectos. Espera a estar completamente sobrio para evaluar la experiencia con perspectiva."
   },
   {
-   "p": "¿Hay disponibilidad permanente?",
-   "r": "PENDIENTE"
+   "p": "¿Cuánto duran los hongos deshidratados?",
+   "r": "Si se mantienen protegidos de la humedad, el calor, la luz y el oxígeno, los hongos pueden conservar gran parte de su potencia durante meses. En mi experiencia, he conservado hongos deshidratados durante más de siete meses en un recipiente hermético dentro de la refrigeradora con una potencia relativamente buena."
+  },
+  {
+   "p": "¿Puedo mezclarlos con alcohol u otras sustancias? ",
+   "r": "Lo más prudente es evitar las mezclas. Pueden hacer que los efectos sean más impredecibles y dificultar que reconozcas o gestiones una reacción adversa. Las interacciones dependen de las sustancias implicadas. "
   }
  ]
 };
