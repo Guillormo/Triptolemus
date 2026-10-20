@@ -57,6 +57,20 @@ window.CATALOGO = {
    "ingredientes": "",
    "alergenos": "",
    "imagen": "imagenes\\Mxa.jpg"
+  },
+  {
+   "id": "TTBVI",
+   "nombre": "Panaeolus Cyancescens TTBVI",
+   "categoria": "Hongos deshidratados",
+   "subcategoria": "Exótico",
+   "nivel": "Muy Fuertes",
+   "descripcion": "Variedad de Panaeolus Cyanescens hallada en bajo un árbol de tamarindo en las British Virgin Islands. Conocida por ser el hongo más potente del mundo en contenido de psilocibina a la fecha.",
+   "precio": 45.0,
+   "presentacion": "Frasco de vidrio",
+   "peso": "1g",
+   "ingredientes": "",
+   "alergenos": "",
+   "imagen": "imagenes\\Ttbvi.jpg"
   }
  ],
  "faq": [
