@@ -79,6 +79,14 @@ window.CATALOGO = {
   {
    "p": "¿Puedo mezclarlos con alcohol u otras sustancias? ",
    "r": "Lo más prudente es evitar las mezclas. Pueden hacer que los efectos sean más impredecibles y dificultar que reconozcas o gestiones una reacción adversa. Las interacciones dependen de las sustancias implicadas. "
+  },
+  {
+   "p": "¿Qué es una microdosis? ",
+   "r": "En la literatura sobre microdosificación se encuentran cantidades de aproximadamente 0,1 a 0,5 gramos de hongos deshidratados. Nuestras cápsulas contienen 0,2 gramos de material fúngico deshidratado. "
+  },
+  {
+   "p": "¿Qué tan seguido se toman las microdosis? ",
+   "r": "Existen dos protocolos: el de Fadiman y el de Stamets. El primero fue popularizado por el psicólogo James Fadiman en su libro The Psychedelic Explorer's Guide (2011). Su esquema más conocido alterna un día de consumo con dos días sin consumo. Se difundió como una manera de observar los efectos y dejar intervalos entre tomas, entre otras razones para reducir la preocupación por el desarrollo de tolerancia. Por otro lado, el Protocolo de Stamets combina la microdosificación de psilocibina con melena de león (Hericium erinaceus) y niacina (vitamina B3), con un esquema popular de cuatro días de uso y tres de descanso."
   }
  ]
 };
