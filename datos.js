@@ -96,11 +96,11 @@ window.CATALOGO = {
   },
   {
    "p": "¿Qué es una microdosis? ",
-   "r": "En la literatura sobre microdosificación se encuentran cantidades de aproximadamente 0,1 a 0,5 gramos de hongos deshidratados. Nuestras cápsulas contienen 0,2 gramos de material fúngico deshidratado. "
+   "r": "Las microdosis son cantidades pequeñas de una sustancia psicodélica que se consumen con la intención de experimentar efectos sutiles, sin provocar las alteraciones perceptivas intensas asociadas a dosis mayores.  En el caso de los hongos con psilocibina, no existe una definición universal de microdosis. La cantidad de psilocibina puede variar considerablemente entre hongos, incluso dentro de una misma especie, por lo que el peso del material no permite predecir con precisión sus efectos.  Algunas personas recurren a la microdosificación con la intención de mejorar su estado de ánimo, concentración o creatividad. Sin embargo, la evidencia científica disponible todavía no permite afirmar de manera concluyente que produzca estos beneficios de forma consistente.  La práctica se popularizó durante la década de 2010, junto con diferentes protocolos de administración, como los asociados a James Fadiman y Paul Stamets. Estos protocolos son propuestas de uso popularizadas, no tratamientos médicos cuya eficacia y seguridad estén establecidas."
   },
   {
    "p": "¿Qué tan seguido se toman las microdosis? ",
-   "r": "Existen dos protocolos: el de Fadiman y el de Stamets. El primero fue popularizado por el psicólogo James Fadiman en su libro The Psychedelic Explorer's Guide (2011). Su esquema más conocido alterna un día de consumo con dos días sin consumo. Se difundió como una manera de observar los efectos y dejar intervalos entre tomas, entre otras razones para reducir la preocupación por el desarrollo de tolerancia. Por otro lado, el Protocolo de Stamets combina la microdosificación de psilocibina con melena de león (Hericium erinaceus) y niacina (vitamina B3), con un esquema popular de cuatro días de uso y tres de descanso."
+   "r": "Existen dos protocolos: el de Fadiman y el de Stamets. El primero fue popularizado por el psicólogo James Fadiman en su libro The Psychedelic Explorer's Guide (2011). Su esquema más conocido alterna un día de consumo con dos días sin consumo. Se difundió como una manera de observar los efectos y dejar intervalos entre tomas, entre otras razones para reducir la preocupación por el desarrollo de tolerancia. Por otro lado, el Protocolo de Stamets combina la microdosificación de psilocibina con melena de león (Hericium erinaceus) y niacina (vitamina B3), con un esquema popular de cuatro días de uso y tres de descanso. "
   }
  ]
 };
